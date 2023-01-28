@@ -4,6 +4,6 @@ class User < ApplicationRecord
   has_many :likes, foreign_key: 'author_id', dependent: :destroy
 
   def recent_post_counter
-    posts.order(created_at: :desc).limit(3)
+    post.order(created_at: :desc).limit(3)
   end
 end
