@@ -60,7 +60,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: creating_data_model_test
+  database: blog_app
+  username: postgres
+  password: Bleu111111
+  port: 5433
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
