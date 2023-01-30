@@ -1,10 +1,9 @@
-<a name="readme-top"></a>
+<a id="readme-top"></a>
 
 <div align="center">
-
-  <img src="https://user-images.githubusercontent.com/93520178/203661672-538bff13-8797-4d20-9b82-372aa011d464.png" alt="logo" width="100"  height="auto" />
+  <img src="https://user-images.githubusercontent.com/108806646/215562421-e8b28205-90bf-4b83-a069-46ea75e964c3.png" alt="logo" width="100"  height="auto" />
   <br/>
-
+  <h2>Blog app</h2>
 </div>
 
 # 📗 Table of Contents
@@ -23,26 +22,32 @@
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
 
-# 📖 Blog app - creating a data model <a name="about-project"></a>
+# 📖 Blog app <a id="about-project"></a>
 
 > The Blog app will be a classic example of a blog website. I create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 Please click on the video below 👇 for more explanation 
 
-## Explanation video
+## 🛠 Built With <a id="built-with"></a>
 
-[]()
+### Tech Stack <a id="tech-stack"></a>
+  <details>
+  <summary>Server</summary>
+    <ul>
+      <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+      <li><a href="https://www.postgresql.org/">Postgres</a></li>
+    </ul>
+  </details>
 
-## 🛠 Built With <a name="built-with"></a>
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Tech Stack <a name="tech-stack"></a>
+### ERD Diagram <a id="diagram">
 
-  <ul>
-    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
-    <li><a href="https://www.postgresql.org/">Postgres</a></li>
-  </ul>
+<img width="777" alt="blog app" src="https://user-images.githubusercontent.com/108806646/215563461-8212fa69-d194-4677-9e90-848c8c81ae46.png">
 
-## 💻 Getting Started <a name="getting-started"></a>
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a id="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
@@ -97,7 +102,7 @@ Run the following command for the rspec tests(with details):
 rspec ./spec --format documentation
 ```
 
-## 👥 Author <a name="authors"></a>
+## 👥 Author <a id="authors"></a>
 
 👤 **Olivier Kango**
 
@@ -105,22 +110,55 @@ rspec ./spec --format documentation
 - Twitter: [@twitterolivier](https://twitter.com/olivierkango1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/olivier-kango-b990601b8/)
 
-## 🤝 Contributing <a name="contributing"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a id="future-features"></a>
+
+> Features to add to the project.
+
+- **Views**
+- **Forms**
+- **Validations, Model specs, and n+1 problems**
+- **Add Devise**
+- **Add authorization rules**
+- **Integration specs for Views**
+
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a id="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Olivier-Kango/creating_data_model/issues/new).
+Feel free to check the [issues page](https://github.com/Olivier-Kango/blog_app/issues/new).
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
+## ⭐️ Show your support <a id="support"></a>
 
 Give this project a star if you like it !
 
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a id="faq"></a>
+
+- **Do I have to have any previous knowledge about ruby to use this project?**
+
+  - No!
+
+- **How to use this project?**
+
+  - check the [Getting Started](#getting-started) section to have a complete guid on how to setup and run teh project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
+## 📝 License <a id="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
