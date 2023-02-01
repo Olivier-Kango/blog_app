@@ -28,17 +28,17 @@ RSpec.describe 'Users', type: :request do
       get user_path(@user.id)
     end
 
-  # Check if response status is correct.
+    # Check if response status is correct.
     it 'should check if status was correct' do
       expect(response).to have_http_status(200)
     end
 
-  # Check if a correct template is rendered.
+    # Check if a correct template is rendered.
     it 'should check if correct index template is rendered' do
       expect(response).to render_template(:show)
     end
 
-   # Check if the response body includes correct placeholder text.
+    # Check if the response body includes correct placeholder text.
     it 'should check if response body includes correct placeholder text' do
       expect(response.body).to include('This is the Users show page')
     end
