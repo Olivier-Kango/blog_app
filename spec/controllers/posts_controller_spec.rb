@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Posts', type: :request do
   describe 'post index action' do
     before :each do
-      @user = User.create(name: 'Tom', photo: 'photo', bio: 'Teacher from Mexico.', posts_counter: 1)
+      @user = User.create(name: 'Tom', photo: 'https://user-images.githubusercontent.com/108806646/216281530-fa5c3020-197a-498e-9024-339268ba1959.jpg', bio: 'Teacher from Mexico.', posts_counter: 1)
       get "/users/#{@user.id}/posts"
     end
 
@@ -16,7 +16,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'should check if response body includes correct placeholder text' do
-      expect(response.body).to include('This is the posts index page')
+      expect(response.body).to include('Pagination')
     end
   end
 
@@ -24,7 +24,7 @@ RSpec.describe 'Posts', type: :request do
     before :each do
       @user = User.create(
         name: 'Tom',
-        photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+        photo: 'https://user-images.githubusercontent.com/108806646/216281530-fa5c3020-197a-498e-9024-339268ba1959.jpg',
         bio: 'Teacher from Mexico.',
         posts_counter: 1
       )
@@ -49,7 +49,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'should check if response body includes correct placeholder text' do
-      expect(response.body).to include('This is the posts show page')
+      expect(response.body).to include('Comments:')
     end
   end
 end
