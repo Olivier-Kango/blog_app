@@ -33,7 +33,7 @@ body {
 .main-container {
   width: 60%;
   margin-top: 2%;
-  gap: 5%;
+  gap: 1%;
   flex-direction: column;
   height: 100vh;
 }
@@ -59,6 +59,16 @@ body {
   text-align: end;
 }
 
+.users-post > p,
+.user-bio > p {
+  margin: 10px 0;
+}
+
+.users-post > h4 {
+  font-weight: 200;
+  text-align: end;
+}
+
 .user-posts > button {
   margin-top: 1rem;
   margin-left: 40%;
@@ -81,4 +91,9 @@ body {
 .pagination {
   margin-left: 40%;
   font-size: 20px;
+}
+
+.img-cont > img {
+  border: 2px solid black;
+  padding: 0;
 }
