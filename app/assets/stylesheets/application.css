@@ -64,6 +64,10 @@ body {
   margin: 10px 0;
 }
 
+.users-post > h2 {
+  margin-bottom: 20px;
+}
+
 .users-post > h4 {
   font-weight: 200;
   text-align: end;
@@ -91,9 +95,22 @@ body {
 .pagination {
   margin-left: 40%;
   font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.padd_post {
+  margin-left: 20%;
 }
 
 .img-cont > img {
   border: 2px solid black;
   padding: 0;
+}
+
+.link-button:hover {
+  color: red;
+}
+
+.like {
+  cursor: pointer;
 }

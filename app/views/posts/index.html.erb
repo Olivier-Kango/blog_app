@@ -15,6 +15,9 @@
         <h2><%= link_to "Post title: #{post.title}", user_post_path(@user.id, post.id), class: "link-button" %></h2>
         <p><%= post.text %></p>
         <h4>Comments: <%=post.comments_counter %>, Likes: <%= post.likes_counter %></h4>
+        <%= form_with url: "/users/#{@user.id}/posts/#{post.id}/likes", model: Like do |form| %>
+          <%= form.submit "Like Post", class: "bg-blue-500 text-white p-2 rounded hover:bg-blue-600 hover:cursor-pointer like" %>
+        <% end %>
       </div>
       <div class="comments-cont">
         <% if post.recent_comment_counter.count.zero? %>
@@ -27,8 +30,8 @@
       </div>
     </div>
   <% end %>
-  <button class="pagination"> 
-    Pagination
+  <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 pagination"> 
+    <%= link_to 'Add new Post', user_posts_path(@user) + '/new' %>
   </button>
 </div>
  
