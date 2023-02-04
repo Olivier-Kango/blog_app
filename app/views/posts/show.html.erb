@@ -1,17 +1,20 @@
 <div class="main-container">
-<div class="post-container">
-  <h2><%= @post.title %> by <%= @post.author.name %></h2>
-  <h6>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></h6>
-  <p class="post-text"><%= @post.text %></p>
-</div>
+  <div class="post-container">
+    <h2><%= @post.title %> by <%= @post.author.name %></h2>
+    <h6>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></h6>
+    <p class="post-text"><%= @post.text %></p>
+  </div>
 
-<div class="comments-cont">
-  <% if @post.all_comments.count.zero? %>
-  <p>Post has no comments yet</p>
-  <%else%>
-  <% @post.all_comments.each do |comment| %>
-    <p><%= comment.author.name %>: <%= comment.text %></p>
-  <% end %>
-  <% end %>
-</div>
+  <div class="comments-cont">
+    <% if @post.all_comments.count.zero? %>
+    <p>Post has no comments yet</p>
+    <%else%>
+    <% @post.all_comments.each do |comment| %>
+      <p><%= comment.author.name %>: <%= comment.text %></p>
+    <% end %>
+    <% end %>
+  </div>
+  <button class="bg-blue-500 text-white p-2 rounded mt-36 hover:bg-blue-600 pagination"> 
+    <%= link_to 'Add new Comment', user_post_path(@user, @post.id) + '/comments/new' %>
+  </button>
 </div>
