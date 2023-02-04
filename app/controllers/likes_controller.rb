@@ -1,10 +1,21 @@
 class LikesController < ApplicationController
+  def new
+    @like = Like.new
+  end
+
   def create
+    @like = Like.new(author: current_user, post_id: params[:post_id])
     @user = current_user
     @post = Post.find(params[:post_id])
-    @like = Like.new(author: current_user, post_id: params[:post_id])
-    @like.author_id = @user.id
-    @like.post_id = params[:post_id]
-    redirect_to user_post_path(@user, @post) if @like.save
+
+    if @like.save
+      redirect_to user_post_path(@user, @post)
+    else
+      render json: { error: @like.errors.full_messages.to_sentence }, status: :unprocessable_entity
+    end
   end
+
+  private
+
+  def set_post; end
 end
