@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'User Page Index', type: :feature do
   before :each do
     @tom = User.create(
-      name: 'Tom',
+      name: 'Olivier',
       photo: 'https://user-images.githubusercontent.com/108806646/216281530-fa5c3020-197a-498e-9024-339268ba1959.jpg',
       bio: 'Teacher',
       posts_counter: 6
@@ -34,7 +34,7 @@ RSpec.describe 'User Page Index', type: :feature do
   end
 
   it 'redirects to users show page' do
-    click_on 'Tom'
+    click_on 'Olivier'
     expect(page).to have_current_path user_path(@tom)
     expect(page).to have_content('Teacher')
   end
