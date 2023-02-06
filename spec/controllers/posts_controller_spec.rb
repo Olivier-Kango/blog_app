@@ -19,7 +19,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'should check if response body includes correct placeholder text' do
-      expect(response.body).to include('Pagination')
+      expect(response.body).to include('Add new Post')
     end
   end
 

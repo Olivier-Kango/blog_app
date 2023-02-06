@@ -110,6 +110,11 @@ rspec ./spec --format documentation
 - Twitter: [@twitterolivier](https://twitter.com/olivierkango1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/olivier-kango-b990601b8/)
 
+👤 **Jeremiah Melfah**
+
+- GitHub: [GitHub](https://github.com/Jaymelfah)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jeremiah-ekow-melfah-a4402a161/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -117,10 +122,6 @@ rspec ./spec --format documentation
 ## 🔭 Future Features <a id="future-features"></a>
 
 > Features to add to the project.
-
-- **Views**
-- **Forms**
-- **Validations, Model specs, and n+1 problems**
 - **Add Devise**
 - **Add authorization rules**
 - **Integration specs for Views**
@@ -159,5 +160,6 @@ Give this project a star if you like it !
 ## 📝 License <a id="license"></a>
 
 This project is [MIT](./LICENSE.txt) licensed.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
