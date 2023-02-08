@@ -12,9 +12,10 @@
   </head>
 
   <body class="bg-amber-100">
-      <p class="notice"><%= notice %></p>
+          <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
-     <div class="flex gap-16 w-full justify-end mr-10">
+      <br />
+     <div class="flex gap-16 w-full justify-end mr-10 login">
       <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "link-button" %>
       <% unless user_signed_in? %>
       <button>
