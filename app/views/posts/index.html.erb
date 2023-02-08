@@ -1,7 +1,7 @@
 <div class="main-container">
   <div class="users-wrapper flex">
     <div class="img-cont">
-      <%= image_tag @user.photo, :size => "90x90", alt: "user photo" %>
+      <%= image_tag (@user.photo.nil? ? "user.png" : @user.photo), :size => "90x90", alt: "user photo" %>
     </div>
     <div class="user-details">
       <h2><%= @user.name %></h2>
@@ -30,6 +30,7 @@
       </div>
     </div>
   <% end %>
+  <br />
   <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 pagination"> 
     <%= link_to 'Add new Post', user_posts_path(@user) + '/new' %>
   </button>

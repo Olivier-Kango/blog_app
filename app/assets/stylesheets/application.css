@@ -100,14 +100,14 @@ body {
 }
 
 .fields {
-  width: 80%;
-}
-
-.fiel {
-  width: 100%;
+  width: 60%;
 }
 
 .login {
   display: flex;
   justify-content: center;
+}
+
+.login:hover {
+  cursor: pointer;
 }

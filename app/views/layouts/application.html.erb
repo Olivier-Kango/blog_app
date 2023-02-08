@@ -17,11 +17,6 @@
       <br />
      <div class="flex gap-16 w-full justify-end mr-10 login">
       <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "link-button" %>
-      <% unless user_signed_in? %>
-      <button>
-        <%= link_to "Log in", new_user_session_path, class: "link-button"%>
-      </button>
-      <% end %>
       </div>
     <%= yield %>
   </body>
