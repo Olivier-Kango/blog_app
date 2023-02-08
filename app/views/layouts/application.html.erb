@@ -16,7 +16,7 @@
       <p class="alert"><%= alert %></p>
       <br />
      <div class="flex gap-16 w-full justify-end mr-10 login">
-      <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "link-button" %>
+      <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "link-button reload" %>
       </div>
     <%= yield %>
   </body>
