@@ -163,8 +163,8 @@ Give this project a star if you like it !
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
+<!-- LICENSE -->
 ## 📝 License <a id="license"></a>
 
 This project is [MIT](./LICENSE.txt) licensed.
