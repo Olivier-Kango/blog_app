@@ -1,15 +1,18 @@
-<h1 class="text-blue-600 mt-16">Add A New Post</h1>
-<%= form_with model: @post, url: user_posts_path, method: :post, local: true, scope: :new_post do |form| %>
+<br />
+<h1 class="text-primary mt-16">Add A New Post</h1>
+<%= form_with model: @post, url: user_posts_path, method: :post, local: true, scope: :new_post, class: "fields" do |form| %>
   <div class="bg-blue-200 p-4 rounded mb-4">
     <div class="mb-4">
-      <%= form.label :title, class: "text-blue-800 font-bold" %><br>
-      <%= form.text_field :title, class: "bg-white border border-blue-400 p-2 rounded" %>
+      <%= form.label :title, class: "font-weight-bold" %><br>
+      <%= form.text_field :title, class: "bg-white border border-primary p-2 rounded w-100" %>
     </div>
 
     <div class="mb-4">
-      <%= form.label :text, class: "text-blue-800 font-bold" %><br>
-      <%= form.text_area :text, rows: 9, class: "bg-white border border-blue-400 p-4 rounded" %>
+      <%= form.label :text, class: "font-weight-bold" %><br>
+      <%= form.text_area :text, rows: 9, class: "bg-white border border-primary p-4 rounded w-100" %>
     </div>
-    <%= form.submit "Click to Add Post", class: "bg-blue-500 text-white p-2 rounded hover:bg-blue-600 padd_post" %>
+    <div class="login">
+      <%= form.submit "Click to Add Post", class: "btn btn-primary bg-blue-500 text-white p-2 rounded text-center w-100" %>
+    </div>
   </div>
 <% end %>
