@@ -1,3 +1,4 @@
 <div class="container d-flex flex-column">
+ <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "link-button reload" %>
    <%= render partial: 'partials/user' %>
 </div>
