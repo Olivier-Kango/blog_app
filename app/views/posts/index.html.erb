@@ -15,6 +15,9 @@
         <h2><%= link_to post.title, user_post_path(@user.id, post.id), class: "link-button" %></h2>
         <p><%= post.text %></p>
         <h4>Comments: <%=post.comments_counter %>, Likes: <%= post.likes_counter %></h4>
+          <% if can? :destroy, post %>
+            <%=button_to "Delete Post", user_post_path(@user, post),  class: "btn btn-primary bg-blue-500 text-white p-2 rounded text-center", method: :delete %>
+          <% end %>
         <%= form_with url: "/users/#{@user.id}/posts/#{post.id}/likes", model: Like do |form| %>
           <%= form.submit "Like Post", class: "btn btn-primary bg-blue-500 text-white p-2 rounded text-center" %>
         <% end %>
