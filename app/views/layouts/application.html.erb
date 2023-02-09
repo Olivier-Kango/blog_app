@@ -22,7 +22,9 @@
         <% if User.any? %>
           <%= link_to "Sign in", new_user_session_path, class: "link-button" %>
         <% else %>
-          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary bg-blue-500 text-white p-2 rounded text-center w-50" %>
+          <% unless current_page?(new_user_registration_path) || current_page?(new_user_session_path) %>
+            <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary bg-blue-500 text-white p-2 rounded text-center w-50" %>
+          <% end %>
         <% end %>
       <% end %>
     </div>
