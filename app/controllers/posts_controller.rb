@@ -15,7 +15,7 @@ class PostsController < ApplicationController
     current_user = User.find(params[:user_id])
     @post = Post.new(post_params)
     @post.author = current_user
-    @post.user_id = current_user.id
+    # @post.user_id = current_user.id
     @post.comments_counter = 0
     @post.likes_counter = 0
     if @post.save
