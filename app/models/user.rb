@@ -11,4 +11,12 @@ class User < ApplicationRecord
   def recent_post_counter
     posts.order(created_at: :desc).limit(3)
   end
+
+  ROLES = %w[admin].freeze
+
+  ROLES.each do |exact_role|
+    define_method "#{exact_role}?" do
+      role == exact_role
+    end
+  end
 end
