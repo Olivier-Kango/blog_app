@@ -26,8 +26,6 @@
 
 > The Blog app will be a classic example of a blog website. I create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-Please click on the video below 👇 for more explanation 
-
 ## 🛠 Built With <a id="built-with"></a>
 
 ### Tech Stack <a id="tech-stack"></a>
@@ -44,6 +42,16 @@ Please click on the video below 👇 for more explanation
 ### ERD Diagram <a id="diagram">
 
 <img width="777" alt="blog app" src="https://user-images.githubusercontent.com/108806646/215563461-8212fa69-d194-4677-9e90-848c8c81ae46.png">
+
+<!-- Features -->
+
+### Key Features <a id="key-features"></a>
+
+- **User Sign_up and Sing_in**
+- **User can Comment and Like**
+- **User can Delete Comment**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
