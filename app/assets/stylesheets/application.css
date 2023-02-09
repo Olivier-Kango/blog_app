@@ -8,7 +8,7 @@
 }
 
 .body {
-  background: #FFF8E1;
+  background: #fff8e1;
 }
 
 body {
@@ -63,6 +63,11 @@ body {
   font-size: 18px;
 }
 
+button {
+  border: none;
+  background: transparent;
+}
+
 .user-posts > button {
   margin-top: 1rem;
   margin-left: 40%;
@@ -98,11 +103,6 @@ body {
   padding: 0;
 }
 
-.link-button:hover,
-.sign_out:hover {
-  color: blue;
-}
-
 .like {
   cursor: pointer;
 }
@@ -116,17 +116,17 @@ body {
   justify-content: center;
 }
 
-.login:hover {
-  cursor: pointer;
-}
-
 .sign_out {
   border: none;
   background: transparent;
   font-size: 1.5rem;
 }
 
-button {
-  border: none;
-  background: transparent;
+.link-button:hover,
+.sign_out:hover {
+  color: blue;
+}
+
+.login:hover {
+  cursor: pointer;
 }
