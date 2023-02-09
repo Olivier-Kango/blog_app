@@ -35,7 +35,6 @@ RSpec.describe 'Posts', type: :request do
         author: @user,
         title: 'Hello',
         text: 'This is my first post',
-        user_id: @user.id,
         author_id: @user.id,
         comments_counter: 0,
         likes_counter: 0

@@ -41,7 +41,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_08_003228) do
     t.bigint "author_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
     t.index ["author_id"], name: "index_posts_on_author_id"
   end
 

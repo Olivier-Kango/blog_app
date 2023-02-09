@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @user = User.find(params[:user_id])
+    @user = User.find(params[:author_id])
     @posts = @user.posts.includes(:comments)
   end
 
@@ -12,11 +12,10 @@ class PostsController < ApplicationController
   end
 
   def create
-    current_user = User.find(params[:user_id])
+    current_user = User.find(params[:author_id])
     @post = Post.new(post_params)
     @post.author = current_user
     @post.author_id = current_user.id
-    @post.user_id = current_user.id
     @post.comments_counter = 0
     @post.likes_counter = 0
     if @post.save
@@ -29,8 +28,8 @@ class PostsController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:user_id])
-    @post = Post.find_by!(id: params[:id], author_id: params[:user_id])
+    @user = User.find(params[:author_id])
+    @post = Post.find_by!(id: params[:id], author_id: params[:author_id])
   end
 
   private
