@@ -12,11 +12,11 @@
   <% @posts.each do |post| %>
     <div class="posts-enclosure">
       <div class="users-post">
-        <h2><%= link_to "Post title: #{post.title}", user_post_path(@user.id, post.id), class: "link-button" %></h2>
+        <h2><%= link_to post.title, user_post_path(@user.id, post.id), class: "link-button" %></h2>
         <p><%= post.text %></p>
         <h4>Comments: <%=post.comments_counter %>, Likes: <%= post.likes_counter %></h4>
         <%= form_with url: "/users/#{@user.id}/posts/#{post.id}/likes", model: Like do |form| %>
-          <%= form.submit "Like Post", class: "bg-blue-500 text-white p-2 rounded hover:bg-blue-600 hover:cursor-pointer like" %>
+          <%= form.submit "Like Post", class: "btn btn-primary bg-blue-500 text-white p-2 rounded text-center" %>
         <% end %>
       </div>
       <div class="comments-cont">
@@ -31,8 +31,8 @@
     </div>
   <% end %>
   <br />
-  <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 pagination"> 
-    <%= link_to 'Add new Post', user_posts_path(@user) + '/new' %>
+  <button class="w-100"> 
+    <%= link_to 'Add new Post', user_posts_path(@user) + '/new', class: "btn btn-primary bg-blue-500 text-white p-2 rounded text-center w-100" %>
   </button>
 </div>
  

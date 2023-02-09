@@ -57,8 +57,9 @@ body {
 }
 
 .users-post > h4 {
-  font-weight: 200;
+  font-weight: 300;
   text-align: end;
+  font-size: 16px;
 }
 
 .user-posts > button {
@@ -69,7 +70,8 @@ body {
 .link-button {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 400;
 }
 
 .posts-enclosure {
@@ -97,7 +99,7 @@ body {
 
 .link-button:hover,
 .sign_out:hover {
-  color: red;
+  color: blue;
 }
 
 .like {
@@ -120,5 +122,10 @@ body {
 .sign_out {
   border: none;
   background: transparent;
-  font-size: large;
+  font-size: 1.5rem;
+}
+
+button {
+  border: none;
+  background: transparent;
 }

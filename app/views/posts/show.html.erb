@@ -14,7 +14,8 @@
     <% end %>
     <% end %>
   </div>
-  <button class="bg-blue-500 text-white p-2 rounded mt-36 hover:bg-blue-600 pagination"> 
-    <%= link_to 'Add new Comment', user_post_path(@user, @post.id) + '/comments/new' %>
+  <br />
+  <button class="w-100"> 
+    <%= link_to 'Add new Comment', user_post_path(@user, @post.id) + '/comments/new', class: "btn btn-primary bg-blue-500 text-white p-2 rounded text-center w-100" %>
   </button>
 </div>
