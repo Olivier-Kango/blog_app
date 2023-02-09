@@ -3,12 +3,12 @@
 
   <div class="field">
   <%= f.label :name %><br />
-  <%= f.text_field :name, class: "w-full p-3 border-solid border-black" %>
+  <%= f.text_field :name, class: "w-100 border-solid border-black" %>
   </div>
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "w-full" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "w-100" %>
   </div>
 
   <div class="field">
@@ -16,17 +16,17 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password", class: "w-full" %>
+    <%= f.password_field :password, autocomplete: "new-password", class: "w-100" %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "w-full" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "w-100" %>
   </div>
   <br />
   
   <div class="actions login">
-    <%= f.submit "Sign up", class: "bg-blue-500 text-white p-4 rounded text-center m-4 hover:bg-blue-700 w-full" %>
+    <%= f.submit "Sign up", class: "btn btn-primary bg-blue-500 text-white p-2 rounded text-center w-100" %>
   </div>
 <% end %>
 

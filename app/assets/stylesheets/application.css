@@ -7,6 +7,10 @@
   display: flex;
 }
 
+.body {
+  background: #FFF8E1;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -35,7 +39,7 @@ body {
 .post-container {
   border: 2px solid black;
   width: 100%;
-  padding: 1rem;
+  padding: 0.3rem 1rem;
   margin-top: 5px;
 }
 
@@ -91,7 +95,8 @@ body {
   padding: 0;
 }
 
-.link-button:hover {
+.link-button:hover,
+.sign_out:hover {
   color: red;
 }
 
@@ -110,4 +115,10 @@ body {
 
 .login:hover {
   cursor: pointer;
+}
+
+.sign_out {
+  border: none;
+  background: transparent;
+  font-size: large;
 }
